@@ -34,7 +34,7 @@ namespace TicketClassLibrary.Tests
             // ACt
 
             // Assert
-            Assert.AreEqual("car", car.Vehicle().ToLower());
+            Assert.AreEqual("car", car.VehicleName().ToLower());
         }
     }
 }

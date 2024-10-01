@@ -9,7 +9,7 @@ namespace TicketClassLibrary
     /// <summary>
     /// public Klasse Mc som indeholder 2 props (lisensplate, og datetime) indeholder 2 metoder med pris og vehicle
     /// </summary>
-    public class MC
+    public class MC : Vehicle
     {
         /// <summary>
         /// default constructer
@@ -36,7 +36,7 @@ namespace TicketClassLibrary
         /// <summary>
         /// prop for at kunne få fat i licenseplate
         /// </summary>
-        public string LicensPlate
+        public override string LicensePlate
         {
             get { return _licensPlate; }
             set { _licensPlate = value; }
@@ -45,7 +45,7 @@ namespace TicketClassLibrary
         /// <summary>
         /// prop så man kan se hvornår objektet blev oprettet
         /// </summary>
-        public DateTime Date
+        public override DateTime Date
         {
             get { return _date; }
             set { _date = value; }
@@ -55,7 +55,7 @@ namespace TicketClassLibrary
         /// public metode som retunere en double 
         /// </summary>
         /// <returns>retunere prisen </returns>
-        public double Price()
+        public override double Price()
         {
             return 125;
         }
@@ -64,12 +64,11 @@ namespace TicketClassLibrary
         /// public metode som retunere en string
         /// </summary>
         /// <returns>retunere MC</returns>
-        public string Vehicle()
+        public override string VehicleName()
         {
             return "MC";
         }
 
-
-
+        
     }
 }
