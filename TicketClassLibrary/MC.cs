@@ -7,36 +7,34 @@ using System.Threading.Tasks;
 namespace TicketClassLibrary
 {
     /// <summary>
-    /// Klasse car som indeholder 2 props licensplate og date
+    /// public Klasse Mc som indeholder 2 props (lisensplate, og datetime) indeholder 2 metoder med pris og vehicle
     /// </summary>
-    public class Car
+    public class MC
     {
         /// <summary>
-        /// default construckter
+        /// default constructer
         /// </summary>
-        public Car()
+        public MC()
         {
             
         }
 
         /// <summary>
-        /// constructer med paremeter
+        /// default constructer med parameter
         /// </summary>
-        /// <param name="string licensPlate"></param>
+        /// <param name="licensPlate"></param>
         /// <param name="date"></param>
-        public Car(string licensPlate, DateTime date)
+        public MC(string licensPlate, DateTime date)
         {
             _licensPlate = licensPlate;
             _date = date;
-
         }
 
         private string _licensPlate;
         private DateTime _date;
 
-        
         /// <summary>
-        /// prop for at få i licensplate
+        /// prop for at kunne få fat i licenseplate
         /// </summary>
         public string LicensPlate
         {
@@ -45,29 +43,30 @@ namespace TicketClassLibrary
         }
 
         /// <summary>
-        /// prop for at få fat i datetime
+        /// prop så man kan se hvornår objektet blev oprettet
         /// </summary>
         public DateTime Date
-        { 
-            get { return _date; } 
-            set { _date = value; } 
+        {
+            get { return _date; }
+            set { _date = value; }
         }
 
         /// <summary>
-        /// Metode til prisen som er fixed på 240
+        /// public metode som retunere en double 
         /// </summary>
-        /// <returns>prisen som er 240</returns>
+        /// <returns>retunere prisen </returns>
         public double Price()
         {
-            return 240;
+            return 125;
         }
+
         /// <summary>
-        /// public metode som retunere en string om hvad køretøj det er
+        /// public metode som retunere en string
         /// </summary>
-        /// <returns>retunere "car"</returns>
+        /// <returns>retunere MC</returns>
         public string Vehicle()
         {
-            return "Car";
+            return "MC";
         }
 
 
