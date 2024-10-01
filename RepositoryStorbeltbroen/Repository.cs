@@ -7,14 +7,12 @@ using System.Threading.Tasks;
 using TicketClassLibrary;
 
 
-
-
 namespace RepositoryStorbeltbroen
 {
-    public class Repository 
+    public class Repository : IRepository
     {
 
-        private static List<Vehicle> tickets = new List<Vehicle>();
+        public static List<Vehicle> tickets = new List<Vehicle>();
 
         /// <summary>
         /// public metode så vi kan adde tickets til vores static liste
@@ -41,7 +39,7 @@ namespace RepositoryStorbeltbroen
         /// <returns>retunere alle de fundne tickets</returns>
         public List<Vehicle> GetTicketsByLicensePlate(string licensePlate)
         {
-            
+
             return tickets.FindAll(ticket => ticket.LicensePlate == licensePlate);
         }
 
