@@ -44,14 +44,15 @@ namespace TicketClassLibrary
 
         /// <summary>
         /// public abstract metode som retunere en pris som så selv skal implementeres i sub klassen
+        /// vi har tilføjet en bol i parameterlisten som gør det mulgit at tilføje tilbud
         /// </summary>
-        /// <returns></returns>
-        public abstract double Price();
+        /// <returns>retunere en double med prisen</returns>
+        public abstract double Price(bool brobiss = false);
 
         /// <summary>
         /// public abstract metode som reuntere kørertøjets navn, men skal så selv implementere metoden i subklassen
         /// </summary>
-        /// <returns></returns>
+        /// <returns>retunere en string med køretøj navn</returns>
         public abstract string VehicleName();
     }
 }

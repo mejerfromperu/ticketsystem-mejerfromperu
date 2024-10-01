@@ -33,11 +33,17 @@ namespace TicketClassLibrary
         
 
         /// <summary>
-        /// public metode som retunere en double 
+        /// public metode som retunere en double
+        /// 
         /// </summary>
         /// <returns>retunere prisen </returns>
-        public override double Price()
+        public override double Price(bool b = false)
         {
+
+            if (b == true)
+            {
+                return 240 * 0.95;
+            }
             return 125;
         }
 

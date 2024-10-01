@@ -51,5 +51,19 @@ namespace TicketClassLibrary.Tests
             // Assert
             Assert.AreEqual("MC", mc.VehicleName());
         }
+
+        [TestMethod()]
+        public void MCTEstForBroBiss()
+        {
+            // Arange
+            MC mc = new MC();
+
+            // ACt
+            double expectedprice = 228;
+
+            // Assert
+            Assert.AreEqual((double)expectedprice, mc.Price(true));
+
+        }
     }
 }

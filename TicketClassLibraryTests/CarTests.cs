@@ -23,7 +23,7 @@ namespace TicketClassLibrary.Tests
 
             // ASsert
             Assert.AreEqual(expectedPrice, car.Price());
-            
+
         }
 
         [TestMethod()]
@@ -61,5 +61,21 @@ namespace TicketClassLibrary.Tests
             // Assert
             Assert.AreEqual("1234567", car.LicensePlate);
         }
+
+
+        [TestMethod()]
+        public void CarTEstForBroBiss()
+        {
+            // Arange
+            Car car = new Car();
+
+            // ACt
+            double expectedprice = 228;
+
+            // Assert
+            Assert.AreEqual((double)expectedprice, car.Price(true));
+
+        }
     }
+
 }

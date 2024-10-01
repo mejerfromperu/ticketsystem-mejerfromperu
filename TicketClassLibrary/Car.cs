@@ -36,8 +36,13 @@ namespace TicketClassLibrary
         /// Metode til prisen som er fixed på 240
         /// </summary>
         /// <returns>prisen som er 240</returns>
-        public override double Price()
+        public override double Price(bool b = false)
         {
+            if(b == true)
+            {
+                return 240 * 0.95;
+            }
+
             return 240;
         }
         /// <summary>
