@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TicketClassLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:TicketClassLibrary.Car">
+            <summary>
+            Klasse car som indeholder 2 props licensplate og date
+            </summary>
+        </member>
+        <member name="M:TicketClassLibrary.Car.#ctor">
+            <summary>
+            default construckter
+            </summary>
+        </member>
+        <member name="M:TicketClassLibrary.Car.#ctor(System.String,System.DateTime)">
+            <summary>
+            constructer med paremeter hvor vi bruger propsne fra base klasssen
+            </summary>
+            <param name="string">licensPlate</param>
+            <param name="date">datetime</param>
+        </member>
+        <member name="M:TicketClassLibrary.Car.Price(System.Boolean)">
+            <summary>
+            Metode til prisen som er fixed på 240
+            </summary>
+            <returns>prisen som er 240</returns>
+        </member>
+        <member name="M:TicketClassLibrary.Car.VehicleName">
+            <summary>
+            public metode som retunere en string om hvad køretøj det er
+            </summary>
+            <returns>retunere "car"</returns>
+        </member>
+        <member name="M:TicketClassLibrary.Car.ToString">
+            <summary>
+            Tostring metode
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TicketClassLibrary.MC">
+            <summary>
+            public Klasse Mc som indeholder 2 props (lisensplate, og datetime) indeholder 2 metoder med pris og vehicle
+            </summary>
+        </member>
+        <member name="M:TicketClassLibrary.MC.#ctor">
+            <summary>
+            default constructer
+            </summary>
+        </member>
+        <member name="M:TicketClassLibrary.MC.#ctor(System.String,System.DateTime)">
+            <summary>
+            default constructer med parameter
+            </summary>
+            <param name="licensPlate">lisenseplate</param>
+            <param name="date">datetime</param>
+        </member>
+        <member name="M:TicketClassLibrary.MC.Price(System.Boolean)">
+            <summary>
+            public metode som retunere en double
+            
+            </summary>
+            <returns>retunere prisen </returns>
+        </member>
+        <member name="M:TicketClassLibrary.MC.VehicleName">
+            <summary>
+            public metode som retunere en string
+            </summary>
+            <returns>retunere MC</returns>
+        </member>
+        <member name="M:TicketClassLibrary.MC.ToString">
+            <summary>
+            Tosting metode
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TicketClassLibrary.Vehicle">
+            <summary>
+            public abstract class vehicle hvor vi har 2 abstrakte metoder, er lavet for at bruge inheritance til de andre 2 klasser. 
+            </summary>
+        </member>
+        <member name="P:TicketClassLibrary.Vehicle.LicensePlate">
+            <summary>
+            prop for at få i licensplate
+            </summary>
+        </member>
+        <member name="P:TicketClassLibrary.Vehicle.Date">
+            <summary>
+            prop for at få fat i datetime
+            </summary>
+        </member>
+        <member name="M:TicketClassLibrary.Vehicle.Price(System.Boolean)">
+            <summary>
+            public abstract metode som retunere en pris som så selv skal implementeres i sub klassen
+            vi har tilføjet en bol i parameterlisten som gør det mulgit at tilføje tilbud
+            </summary>
+            <returns>retunere en double med prisen</returns>
+        </member>
+        <member name="M:TicketClassLibrary.Vehicle.VehicleName">
+            <summary>
+            public abstract metode som reuntere kørertøjets navn, men skal så selv implementere metoden i subklassen
+            </summary>
+            <returns>retunere en string med køretøj navn</returns>
+        </member>
+    </members>
+</doc>

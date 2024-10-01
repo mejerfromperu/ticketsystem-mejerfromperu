@@ -76,6 +76,8 @@ namespace TicketClassLibrary.Tests
             Assert.AreEqual((double)expectedprice, car.Price(true));
 
         }
+
+        
     }
 
 }
