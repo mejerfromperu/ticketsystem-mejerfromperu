@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="TicketClassLibrary">
+      <HintPath>..\..\..\..\OneDrive\Skrivebord\Dll-XMl\TicketClassLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
