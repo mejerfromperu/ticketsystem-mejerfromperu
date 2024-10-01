@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TicketClassLibrary\TicketClassLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="StoreBaeltTicketLibrary">
       <HintPath>..\StoreBaeltTicketLibrary\bin\Debug\net8.0\StoreBaeltTicketLibrary.dll</HintPath>
     </Reference>
