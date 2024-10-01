@@ -7,7 +7,7 @@ using TicketClassLibrary;
 
 namespace StoreBaeltTicketLibrary
 {
-    public class CarWeekendd : Car
+    public class CarWeekendd : Vehicle
     {
         private const double Weekendtilbud = 0.20;
         /// <summary>
@@ -23,9 +23,10 @@ namespace StoreBaeltTicketLibrary
         /// </summary>
         /// <param name="lisenceplate">lisenceplate</param>
         /// <param name="date">date</param>
-        public CarWeekendd(string lisenceplate, DateTime date) : base(lisenceplate, date)
+        public CarWeekendd(string lisenceplate, DateTime date)  
         {
-            
+            LicensePlate = lisenceplate;
+            Date = date;
         }
 
 
@@ -37,7 +38,8 @@ namespace StoreBaeltTicketLibrary
         /// <returns>retunere prisen</returns>
         public override double Price(bool brobizz = false)
         {
-            double price = base.Price(brobizz); // base prisen 
+            Car car = new Car();
+            double price =  car.Price(brobizz); // base prisen 
 
             // her bruger vi Date for at validere hvilken dag de kører over
             if (Date.DayOfWeek == DayOfWeek.Saturday || Date.DayOfWeek == DayOfWeek.Sunday)

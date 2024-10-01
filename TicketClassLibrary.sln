@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oresundbron", "Oresundbron\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundbronTests", "OresundbronTests\OresundbronTests.csproj", "{1C27F289-83D0-4F37-9BE3-5BCCEB11A527}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryStorbeltbroen", "RepositoryStorbeltbroen\RepositoryStorbeltbroen.csproj", "{93B2CF5F-834C-4678-924A-422BFF5A042A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{1C27F289-83D0-4F37-9BE3-5BCCEB11A527}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C27F289-83D0-4F37-9BE3-5BCCEB11A527}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C27F289-83D0-4F37-9BE3-5BCCEB11A527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93B2CF5F-834C-4678-924A-422BFF5A042A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93B2CF5F-834C-4678-924A-422BFF5A042A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93B2CF5F-834C-4678-924A-422BFF5A042A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93B2CF5F-834C-4678-924A-422BFF5A042A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
