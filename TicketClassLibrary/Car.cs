@@ -13,7 +13,7 @@ namespace TicketClassLibrary
     {
 
         private string _licensPlate;
-        private DateTime _date;
+        private DateTime _date; 
 
         public string LicensPlate
         {
