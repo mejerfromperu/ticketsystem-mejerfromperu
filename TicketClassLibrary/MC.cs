@@ -22,8 +22,8 @@ namespace TicketClassLibrary
         /// <summary>
         /// default constructer med parameter
         /// </summary>
-        /// <param name="licensPlate"></param>
-        /// <param name="date"></param>
+        /// <param name="licensPlate">lisenseplate</param>
+        /// <param name="date">datetime</param>
         public MC(string licensPlate, DateTime date)
         {
             LicensePlate = licensPlate;
@@ -55,7 +55,13 @@ namespace TicketClassLibrary
         {
             return "MC";
         }
-
-        
+        /// <summary>
+        /// Tosting metode
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return $"{{{nameof(LicensePlate)}={LicensePlate}, {nameof(Date)}={Date.ToString()}}}";
+        }
     }
 }

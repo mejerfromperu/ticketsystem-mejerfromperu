@@ -23,8 +23,8 @@ namespace TicketClassLibrary
         /// <summary>
         /// constructer med paremeter hvor vi bruger propsne fra base klasssen
         /// </summary>
-        /// <param name="string licensPlate"></param>
-        /// <param name="date"></param>
+        /// <param name="string">licensPlate</param>
+        /// <param name="date">datetime</param>
         public Car(string licensePlate, DateTime date)
         {
             LicensePlate = licensePlate; 
@@ -54,7 +54,13 @@ namespace TicketClassLibrary
             return "Car";
         }
 
-
-
+        /// <summary>
+        /// Tostring metode
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return $"{{{nameof(LicensePlate)}={LicensePlate}, {nameof(Date)}={Date.ToString()}}}";
+        }
     }
 }
