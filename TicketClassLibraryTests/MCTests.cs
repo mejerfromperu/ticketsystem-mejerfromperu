@@ -20,10 +20,10 @@ namespace TicketClassLibrary.Tests
             
 
             // aCt
-            MC mc = new MC("112233", date);
+            MC mc = new MC("11223322", date);
 
             // Assert vi bruger true fordi vi har med tid at gøre og der er en lille tidsforskell i hold til .Now så vi sørger abre for at tidsforskellen ikke er størrere end 1 sek
-            Assert.AreEqual("112233", mc.LicensePlate) ;
+            Assert.AreEqual("11223322", mc.LicensePlate) ;
             Assert.IsTrue((mc.Date - date).TotalSeconds < 1);
 
         }

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace TicketClassLibrary.Tests
 {
@@ -35,6 +36,30 @@ namespace TicketClassLibrary.Tests
 
             // Assert
             Assert.AreEqual("car", car.VehicleName().ToLower());
+        }
+
+        [TestMethod()]
+        [ExpectedException(typeof(ArgumentException), "License plate must be at least 7 characters long.")]
+        public void SetTestForLengtOfLisencePlateTrueFail()
+        {
+            // Arrange
+            Car car = new Car();
+
+            // Act
+            car.LicensePlate = "123456"; // Burde give fejl
+        }
+
+        [TestMethod()]
+        public void SetTestForLengtOfLisencePlateTrue()
+        {
+            // Arrange
+            Car car = new Car();
+
+            // Act
+            car.LicensePlate = "1234567"; // den er højere end 6 så den burde give grønt lys
+
+            // Assert
+            Assert.AreEqual("1234567", car.LicensePlate);
         }
     }
 }

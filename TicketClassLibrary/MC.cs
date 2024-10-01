@@ -26,30 +26,11 @@ namespace TicketClassLibrary
         /// <param name="date"></param>
         public MC(string licensPlate, DateTime date)
         {
-            _licensPlate = licensPlate;
-            _date = date;
+            LicensePlate = licensPlate;
+            Date = date;
         }
 
-        private string _licensPlate;
-        private DateTime _date;
-
-        /// <summary>
-        /// prop for at kunne få fat i licenseplate
-        /// </summary>
-        public override string LicensePlate
-        {
-            get { return _licensPlate; }
-            set { _licensPlate = value; }
-        }
-
-        /// <summary>
-        /// prop så man kan se hvornår objektet blev oprettet
-        /// </summary>
-        public override DateTime Date
-        {
-            get { return _date; }
-            set { _date = value; }
-        }
+        
 
         /// <summary>
         /// public metode som retunere en double 

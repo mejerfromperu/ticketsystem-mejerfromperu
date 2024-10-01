@@ -11,15 +11,34 @@ namespace TicketClassLibrary
     /// </summary>
     public abstract class Vehicle
     {
+        private string _licensePlate;
+        private DateTime _date;
+
         /// <summary>
         /// prop for at få i licensplate
         /// </summary>
-        public virtual string LicensePlate { get; set; }
+        public virtual string LicensePlate
+        {
+            get { return _licensePlate; }
+            set
+            {
+                if (value == null || value.Length < 7)
+                {
+                    throw new ArgumentException("licenseplate most be more than 7 char long");
+                }
+                _licensePlate = value;
+            }
+        }
+                
 
         /// <summary>
         /// prop for at få fat i datetime
         /// </summary>
-        public virtual DateTime Date { get; set; }
+        public virtual DateTime Date
+        {
+            get { return _date; }
+            set { _date = value; }
+        }
 
 
 

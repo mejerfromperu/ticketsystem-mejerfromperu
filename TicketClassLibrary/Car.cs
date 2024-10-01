@@ -21,36 +21,16 @@ namespace TicketClassLibrary
         }
 
         /// <summary>
-        /// constructer med paremeter
+        /// constructer med paremeter hvor vi bruger propsne fra base klasssen
         /// </summary>
         /// <param name="string licensPlate"></param>
         /// <param name="date"></param>
         public Car(string licensePlate, DateTime date)
         {
-            _licensPlate = licensePlate; 
-            _date = date;      
+            LicensePlate = licensePlate; 
+            Date = date;                 
         }
 
-        private string _licensPlate;
-        private DateTime _date;
-
-        /// <summary>
-        /// prop for at få licenseplate og grunden til at vi overrider er for at få lov til at bruge classes egne instans felter
-        /// </summary>
-        public override string LicensePlate
-        {
-            get { return _licensPlate; }
-            set { _licensPlate = value; }
-        }
-
-        /// <summary>
-        /// prop for at få Date og grunden til at vi overrider er for at få lov til at bruge classes egne instans felter
-        /// </summary>
-        public override DateTime Date
-        {
-            get { return _date; }
-            set { _date = value; }
-        }
 
         /// <summary>
         /// Metode til prisen som er fixed på 240
