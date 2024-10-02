@@ -46,7 +46,13 @@ namespace Oresundbron
             return "Oresund car";
         }
 
-
-
+        /// <summary>
+        /// tostring metode for at få skrevet propsne ud 
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return $"{{{nameof(LicensePlate)}={LicensePlate}, {nameof(Date)}={Date.ToString()}}}";
+        }
     }
 }

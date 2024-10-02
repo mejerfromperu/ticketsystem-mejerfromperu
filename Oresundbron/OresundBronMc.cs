@@ -49,7 +49,13 @@ namespace Oresundbron
         {
             return "Oresund MC";
         }
-
-
+        /// <summary>
+        /// tostring metode for at få skrevet probs ud
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return $"{{{nameof(LicensePlate)}={LicensePlate}, {nameof(Date)}={Date.ToString()}}}";
+        }
     }
 }

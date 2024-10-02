@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace TicketClassLibrary
 {
     /// <summary>
-    /// Klasse car som indeholder 2 props licensplate og date
+    /// public Klasse car som indeholder 2 props licensplate og date og 2 metoder price og vehiclename
     /// </summary>
     public class Car : Vehicle
     {

@@ -61,6 +61,13 @@ namespace StoreBaeltTicketLibrary
             return "Car (weekend tilbud)";
         }
 
-
+        /// <summary>
+        /// tostring metode for at få skrevet propsne ud fra carweekend
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return $"{{{nameof(LicensePlate)}={LicensePlate}, {nameof(Date)}={Date.ToString()}}}";
+        }
     }
 }

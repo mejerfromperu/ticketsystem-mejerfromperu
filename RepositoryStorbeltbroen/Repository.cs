@@ -9,6 +9,9 @@ using TicketClassLibrary;
 
 namespace RepositoryStorbeltbroen
 {
+    /// <summary>
+    /// public class Repository som indeholder 3 metoder AddTicket, GetAll, GetTicketsByLicensePlate og en statisk liste tickets.
+    /// </summary>
     public class Repository : IRepository
     {
 

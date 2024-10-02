@@ -54,5 +54,7 @@ namespace TicketClassLibrary
         /// </summary>
         /// <returns>retunere en string med køretøj navn</returns>
         public abstract string VehicleName();
+
+
     }
 }
