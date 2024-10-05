@@ -17,12 +17,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj" />
+    <ProjectReference Include="..\TicketClassLibrary\TicketClassLibrary.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="TicketClassLibrary">
-      <HintPath>..\..\..\..\OneDrive\Skrivebord\Dll-XMl\TicketClassLibrary.dll</HintPath>
+    <Reference Include="StoreBaeltTicketLibrary">
+      <HintPath>..\..\..\Dll-XMl\StoreBaeltTicketLibrary.dll</HintPath>
     </Reference>
   </ItemGroup>
 

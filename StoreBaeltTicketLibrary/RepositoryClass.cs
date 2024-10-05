@@ -8,11 +8,13 @@ using TicketClassLibrary;
 namespace StoreBaeltTicketLibrary
 {
     /// <summary>
-    /// public class Repository som indeholder 3 metoder AddTicket, GetAll, GetTicketsByLicensePlate og en statisk liste tickets.
+    /// public class Repositoryc´lass som indeholder 3 metoder AddTicket, GetAll, GetTicketsByLicensePlate og en statisk liste tickets.
     /// </summary>
     public class RepositoryClass : IRepositoryClass
     {
-
+        /// <summary>
+        /// public static list
+        /// </summary>
         public static List<Vehicle> tickets = new List<Vehicle>();
 
         /// <summary>

@@ -1,7 +1,11 @@
-﻿using TicketClassLibrary;
+﻿using System.Collections.Generic;  
+using TicketClassLibrary;
 
 namespace StoreBaeltTicketLibrary
 {
+    /// <summary>
+    /// pulibc interface med 3 metoder
+    /// </summary>
     public interface IRepositoryClass
     {
         /// <summary>

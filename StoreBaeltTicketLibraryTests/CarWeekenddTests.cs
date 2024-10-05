@@ -40,7 +40,7 @@ namespace StoreBaeltTicketLibrary.Tests
             double actualPrice = car.Price(brobizz: false);
 
             // Assert
-            Assert.AreEqual(expectedPrice, actualPrice, 0.01, "Price should reflect the weekend discount without Brobizz discount.");
+            Assert.AreEqual(expectedPrice, actualPrice, 0.01, "pris uden brobixx");
         }
     }
 }
