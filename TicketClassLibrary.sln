@@ -7,15 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketClassLibrary", "Ticke
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketClassLibraryTests", "TicketClassLibraryTests\TicketClassLibraryTests.csproj", "{2E9866BD-306F-4FC5-9ED8-2B8C237221FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltTicketLibrary", "StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj", "{F94E3733-CE58-499F-9EE5-ACDDF431524D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreBaeltTicketLibrary", "StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj", "{F94E3733-CE58-499F-9EE5-ACDDF431524D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltTicketLibraryTests", "StoreBaeltTicketLibraryTests\StoreBaeltTicketLibraryTests.csproj", "{4A248D17-E045-483F-B29A-14D47DFE1199}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreBaeltTicketLibraryTests", "StoreBaeltTicketLibraryTests\StoreBaeltTicketLibraryTests.csproj", "{4A248D17-E045-483F-B29A-14D47DFE1199}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oresundbron", "Oresundbron\Oresundbron.csproj", "{06335AEB-6528-4BA4-AAA2-52161646B628}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Oresundbron", "Oresundbron\Oresundbron.csproj", "{06335AEB-6528-4BA4-AAA2-52161646B628}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundbronTests", "OresundbronTests\OresundbronTests.csproj", "{1C27F289-83D0-4F37-9BE3-5BCCEB11A527}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryStorbeltbroen", "RepositoryStorbeltbroen\RepositoryStorbeltbroen.csproj", "{93B2CF5F-834C-4678-924A-422BFF5A042A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OresundbronTests", "OresundbronTests\OresundbronTests.csproj", "{1C27F289-83D0-4F37-9BE3-5BCCEB11A527}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +45,6 @@ Global
 		{1C27F289-83D0-4F37-9BE3-5BCCEB11A527}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C27F289-83D0-4F37-9BE3-5BCCEB11A527}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C27F289-83D0-4F37-9BE3-5BCCEB11A527}.Release|Any CPU.Build.0 = Release|Any CPU
-		{93B2CF5F-834C-4678-924A-422BFF5A042A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{93B2CF5F-834C-4678-924A-422BFF5A042A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{93B2CF5F-834C-4678-924A-422BFF5A042A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{93B2CF5F-834C-4678-924A-422BFF5A042A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -16,7 +16,11 @@ namespace Oresundbron
         {
             
         }
-
+        /// <summary>
+        /// Constructer med parameter
+        /// </summary>
+        /// <param name="lisenceplate">lisenpalte</param>
+        /// <param name="date">date</param>
         public OresundBronCar(string lisenceplate, DateTime date) : base()
         {
             LicensePlate = lisenceplate;
